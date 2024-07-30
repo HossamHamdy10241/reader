@@ -10,7 +10,7 @@
     ],
     "content_scripts": [
     {
-      "js": ["content.js"],
+      "js": ["scripts/content.js"],
       "matches": ["<all_urls>"]
     }
   ],
@@ -20,7 +20,10 @@
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
-        "16": "open-book.png"
+        "16": "open-book.png",
+        "48": "open-book.png",
+        "128": "open-book.png",
+        "32":"open-book.png"
     
       }
     }
