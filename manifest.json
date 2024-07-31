@@ -1,31 +1,26 @@
 {
-    "manifest_version": 3,
-    "name": "My Extension",
-    "version": "1.0",
-    "description": "A simple browser extension.",
-    "permissions": [
-      "storage",
-      "activeTab",
-      "scripting"
-    ],
-    "content_scripts": [
+  "manifest_version": 3,
+  "name": "My Extension",
+  "version": "1.0",
+  "description": "A simple browser extension.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "content_scripts": [
     {
       "js": ["scripts/content.js"],
       "matches": ["<all_urls>"]
     }
   ],
-    "background": {
-      "service_worker": "background.js"
-    },
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "open-book.png",
-        "48": "open-book.png",
-        "128": "open-book.png",
-        "32":"open-book.png"
-    
-      }
+
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+ 
+    "default_icon": {
+      "16": "open-book.png",
+      "48": "open-book.png",
+      "128": "open-book.png",
+      "32": "open-book.png"
     }
   }
-  
+}
