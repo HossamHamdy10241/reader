@@ -8,10 +8,10 @@ let cancel=document.createElement('button')
 Object.assign(cancel.style, {position :'absolute',backgroundColor:'rgba(0,0,0,0)',top:0, right:0,border:0,padding:'7px',color:'black'})
 cancel.id='canext'
 cancel.textContent='x';
+document.querySelector('#newdiv').appendChild(cancel)
 document.querySelector('#canext').addEventListener('click',()=>{
     document.querySelector('#newdiv').style.display='none'
 
 })
-document.querySelector('#newdiv').appendChild(cancel)
 // newdiv.textContent='fngdfjgngng'
 console.log('changed')
