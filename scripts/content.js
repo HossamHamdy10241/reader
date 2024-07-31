@@ -16,16 +16,17 @@
 // // newdiv.textContent='fngdfjgngng'
 // console.log('changed')
 let frame = document.createElement('div')
-frame.innerHTML=` <div id="newdiv">
+frame.id='newdiv'
+frame.innerHTML=` 
     <button id="canext">x</button>
     <textarea name="" id="txtplace"></textarea>
-    <div id="sply"></div>
-  </div>`
+    <div id="sply"></div>`
 
 document.body.appendChild(frame)
-let newdiv = dovument.querySelector('#newdiv')
-let cancel = dovument.querySelector('#canext')
+console.log('changed')
+let newdiv = document.querySelector('#newdiv')
+let cancel = document.querySelector('#canext')
 let displayer = document.querySelector('#sply')
 Object.assign(newdiv.style, {position :'fixed',
-        padding :'150px',border: '1px solid', backgroundColor:'#ddeeff',top:'15px',left:'15px','z-index':5000
+        padding :'15px',border: '1px solid', backgroundColor:'#ddeeff',top:'15px',left:'15px','z-index':5000
     } )
